@@ -148,3 +148,61 @@ Utilização de tabelas auxiliares para validação e automação.
 Boas práticas de formatação, filtros e congelamento de painéis.
 
 Estruturação dos dados em formato de tabela para atualização dinâmica.
+
+
+## Qual a diferença entre dados e informações?
+
+As informações são uma análise de dados específicas usadas para responder uma pergunta de negócio.
+
+## Terceiro Projeto
+
+  Foi realizada a criação de um dashboard em cima de dados das vendas do Xbox e seus serviços de assinaturas, dentro dos tópicos abordados na criação do mesmo se encontram:
+
+### Estrutura e Organização de Dados
+
+* Arquitetura Multi-Aba:
+O projeto implementa uma estrutura organizacional abas distintas, seguindo as melhores práticas de separação de responsabilidades. A aba "Assets" centraliza elementos visuais como paleta de cores (#9BC848, #22C55E, #2AE6B1, #5BF6A8) e componentes gráficos, demonstrando planejamento visual consistente. A separação entre dados brutos ("Bases") e análises processadas ("Cálculos", "Dashboard") facilita a manutenção e atualização, princípio fundamental para dashboards profissionais. Foi denominada essa abordagem como A-B-C-D-E. (Assets, Bases, Calc, Dashboard, Extras).
+
+* Modelagem de Dados Estruturada
+A base de dados contém 295 registros (IDs 3231-3525) com 12 campos estruturados, incluindo informações demográficas, contratuais e financeiras dos assinantes. A organização tabular permite análises multidimensionais por plano (Ultimate, Core, Standard), tipo de cobrança (Monthly, Quarterly, Annual) e serviços adicionais (EA Play, Minecraft), demonstrando compreensão de modelagem dimensional para business intelligence.
+
+* Técnicas de Análise e Visualização
+Implementação de Tabelas Dinâmicas
+O dashboard utiliza tabelas dinâmicas para agregação automática de dados por tipo de assinatura, seguindo metodologia de análise exploratória. As análises por período trimestral ("Quarterly") demonstram segmentação temporal estratégica focando na capacidade analítica estruturada.
+
+* Segmentação de Dados Interativa
+A implementação de segmentação de dados permite filtragem dinâmica por múltiplas dimensões, técnica essencial para dashboards interativos. Esta funcionalidade possibilita análises específicas por plano de assinatura, renovação automática e combinações de serviços adicionais, aumentando a usabilidade e flexibilidade analítica.
+
+### Fórmulas e Ferramentas Avançadas
+
+* Aplicação de SUMIFS e Referências Estruturadas
+O projeto demonstra uso de fórmulas condicionais múltiplas através da função SUMIFS para cálculos baseados em critérios específicos. A implementação de referências estruturadas facilita a manutenção e compreensão das fórmulas, substituindo notações convencionais por nomes descritivos das colunas. Esta prática melhora significativamente a legibilidade e reduz erros em análises complexas.
+
+* Criação de Intervalos Nomeados
+O dashboard utiliza intervalos nomeados para facilitar referências em fórmulas e aumentar a eficiência de manutenção. Esta técnica profissional permite que alterações na estrutura de dados sejam propagadas automaticamente através de todo o dashboard, demonstrando conhecimento avançado de gestão de dados no Excel.
+
+### Design e Apresentação Profissional
+
+* Paleta de Cores Corporativa
+A implementação de uma paleta de cores consistente baseada nas cores oficiais do Xbox (#9BC848, #22C55E) demonstra atenção ao branding e identidade visual. O uso de cores contrastantes para diferentes tipos de informação facilita a leitura e interpretação dos dados, seguindo princípios de design de interface centrado no usuário.
+
+* Layout e Hierarquia Visual
+O design segue princípios de gestão à vista, apresentando informações críticas de forma imediatamente compreensível. A organização hierárquica permite identificação rápida de tendências e anomalias, característica essencial para tomada de decisão executiva. A simplicidade visual mantém o foco nas métricas essenciais sem sobrecarregar o usuário com informações secundárias.
+
+### Boas Práticas de Mercado Implementadas
+
+* Controles de Formulário
+A incorporação de controles de formulário como checkboxes e barras de seleção demonstra conhecimento de ferramentas de interatividade avançada. Estes elementos permitem filtragem dinâmica e personalização da visualização sem necessidade de conhecimento técnico pelo usuário final, aumentando a adoção corporativa da ferramenta.
+
+* Automatização e Escalabilidade
+A estrutura implementada permite atualizações automáticas quando novos dados são inseridos na base, características essenciais para ambientes corporativos dinâmicos. A separação clara entre dados e apresentação facilita expansões futuras e manutenção por diferentes usuários, demonstrando visão estratégica de desenvolvimento.
+
+### Métricas e KPIs Relevantes
+
+* Indicadores de Performance
+O dashboard focou em métricas financeiras essenciais incluindo receita total por plano, penetração de serviços adicionais e análise de desconto por cupons. A segmentação por tipo de renovação (automática vs manual) fornece insights sobre retenção de clientes, métrica crítica para negócios de assinatura. Estas escolhas demonstram compreensão de indicadores relevantes para gestão de produtos digitais.
+
+* Análise de Valor do Cliente
+A implementação do cálculo de valor total por assinante, considerando plano base, serviços adicionais e descontos aplicados, mostra capacidade de modelagem financeira complexa. Esta abordagem permite análises de lifetime value e segmentação de clientes por valor, fundamentais para estratégias de pricing e retenção.
+
+Além de dicas adicionais de detalhes como a inserção das datas de apuração dos dados, assim como a data do último update, ambos de formas discretas, em uma interface personalizada para quem fará uso das informações contidas no Dashboard.
